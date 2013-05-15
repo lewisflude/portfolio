@@ -1,0 +1,8 @@
+$primary-color: #4BFBBB;
+$secondary-color: complement($primary-color);
+$primary-grayscale: grayscale($primary-color);
+$text-color: #222;
+$title-color: #111;
+
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);

@@ -1,0 +1,16 @@
+footer {
+    min-height: 120px;
+    margin-top: 24px;
+    color: $primary-color;
+    border: 12px solid $primary-color;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: lighten($primary-color, 25%);
+    padding: 24px;
+    font-size: 48px;
+    line-height: 48px;
+    span {
+      color: lighten($secondary-color, 25%);
+    }
+}
