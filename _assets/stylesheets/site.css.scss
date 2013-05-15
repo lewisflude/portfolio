@@ -73,18 +73,14 @@ body {
 
 }
 
-.about {
+.about-container {
   @include row;
-
-  &:nth-of-type(3) .about-side {
-    float: right;
-  }
 }
 
-.about-side {
+.about {
+
   border-top: 12px solid $primary-color;
   background: lighten($primary-color, 25%);
-  
   margin-bottom: 12px;
   @include span-columns(4);
   border-radius: 4px;
@@ -93,9 +89,11 @@ body {
     @include fill-parent;
     border-radius: 0;
   }
-
-
-
+  p {
+    font-weight: 100;
+    font-size: 18px;
+    padding: 24px;
+  }
   h1 {
     text-align: center;
     }
@@ -104,30 +102,11 @@ body {
     margin: 0 auto 24px;
   }
 }
-.about-content {
-  @include span-columns(8);  
-  margin-bottom: 24px;
-    
-  @include media($tablet) {
-    @include fill-parent;
-  }
-
-  p {
-    padding: 24px;
-    font-weight: 100;
-    font-size: 24px;
-    line-height: 48px;
-  }
-
-}
 
 .action-container {
   padding: 24px;
   margin-top: 24px;
-  border-top: 12px solid $primary-color;
-  border-radius: 4px;
   text-align: center;
-  background: lighten($primary-color, 25%);
   @include media($tablet) {
     border: none;
     margin: 0;

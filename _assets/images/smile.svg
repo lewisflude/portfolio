@@ -4,13 +4,8 @@
     <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
     <defs></defs>
     <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Layer_1" sketch:type="MSLayerGroup" transform="translate(15.000000, 12.000000)" fill="#FB4B8B">
-            <rect d="M0,0 L0,13.5986395 L13.6013605,13.5986395 L13.6013605,0 L0,0 Z M0,0" id="Rectangle" sketch:type="MSShapeGroup" x="0" y="0" width="13.6013605" height="13.5986395"></rect>
-            <rect d="M27.2027211,0 L27.2027211,13.5986395 L68,13.5986395 L68,0 L27.2027211,0 Z M27.2027211,0" id="Rectangle" sketch:type="MSShapeGroup" x="27.2027211" y="0" width="40.7972789" height="13.5986395"></rect>
-            <rect d="M0,27.1972789 L0,40.7959184 L13.6013605,40.7959184 L13.6013605,27.1972789 L0,27.1972789 Z M0,27.1972789" id="Rectangle" sketch:type="MSShapeGroup" x="0" y="27.1972789" width="13.6013605" height="13.5986395"></rect>
-            <rect d="M27.2027211,27.1972789 L27.2027211,40.7959184 L68,40.7959184 L68,27.1972789 L27.2027211,27.1972789 Z M27.2027211,27.1972789" id="Rectangle" sketch:type="MSShapeGroup" x="27.2027211" y="27.1972789" width="40.7972789" height="13.5986395"></rect>
-            <rect d="M0,54.3945578 L0,67.9931973 L13.6013605,67.9931973 L13.6013605,54.3945578 L0,54.3945578 Z M0,54.3945578" id="Rectangle" sketch:type="MSShapeGroup" x="0" y="54.3945578" width="13.6013605" height="13.5986395"></rect>
-            <rect d="M27.2027211,54.3945578 L27.2027211,67.9931973 L68,67.9931973 L68,54.3945578 L27.2027211,54.3945578 Z M27.2027211,54.3945578" id="Rectangle" sketch:type="MSShapeGroup" x="27.2027211" y="54.3945578" width="40.7972789" height="13.5986395"></rect>
+        <g id="Layer_1" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)" fill="#FB4B8B">
+            <path d="M94.587,14.48 L31.657,73.15 L31.217,72.68 L18.847,59.41 L0.566,39.81 L14.106,27.19 L32.387,46.79 L81.776,0.74 L94.587,14.48 Z M94.587,14.48" id="Shape" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

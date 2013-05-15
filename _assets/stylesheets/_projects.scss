@@ -1,9 +1,6 @@
 .project {
 
   height: 360px;
-  background: lighten($primary-color, 25%);
-  border-top: 12px solid $primary-color;
-  border-radius: 4px;
   margin-bottom: 24px;
   @include media($desktop) {
     @include span-columns(4);
@@ -19,16 +16,11 @@
   a {
     color: $text-color;
     &:hover p, &:hover img {
-      opacity: 0.5;
+      opacity: 0.75;
     }
     &:hover img {
       height: 130px;
     }
-  }
-  &.old {
-    background: grayscale(lighten($primary-color, 25%));
-    border-top: 12px solid grayscale($primary-color);
-
   }
   h1,h2 {
     text-align: center;
