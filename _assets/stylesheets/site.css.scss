@@ -4,9 +4,12 @@
 @import 'mixins';
 @import 'variables';
 @import 'typography';
+@import 'buttons';
+
 @import 'slabtext';
 @import 'header';
 @import 'footer';
+@import 'projects';
 
 
 
@@ -133,65 +136,4 @@ body {
     border-radius: 0;
   }
 
-}
-.button {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 24px;
-  padding: 0 48px;
-  line-height: 48px;
-  margin-top: 24px;
-  height: 48px;
-  border: none;
-  background: $secondary-color;
-  border-radius: 4px;
-  color: white;
-  @include transition (all 120ms);
-  box-shadow: 0 4px darken($secondary-color, 10%);
-  @include media($mobile) {
-    font-size: 18px;
-  }
-  &:hover {
-    box-shadow: 0 4px darken($secondary-color, 20%);
-    background: darken($secondary-color, 10%); 
-  }
-}
-
-.project {
-  @include span-columns(4);
-  @include omega(3n);
-  height: 360px;
-  background: lighten($primary-color, 25%);
-  border-top: 12px solid $primary-color;
-  border-radius: 4px;
-  margin-bottom: 24px;
-  a {
-    color: $text-color;
-    &:hover p, &:hover img {
-      opacity: 0.5;
-    }
-    &:hover img {
-      height: 130px;
-    }
-  }
-  &.old {
-    background: grayscale(lighten($primary-color, 25%));
-    border-top: 12px solid grayscale($primary-color);
-
-  }
-  h1 {
-    text-align: center;
-  }
-  img {
-    height: 120px;
-    display: block;
-    margin: 0 auto 24px;
-    border-radius: 4px;
-    @include transition(all 120ms ease-in-out);
-    
-  }
-  p {
-    @include transition(all 120ms ease-in-out);
-    padding: 24px;
-  }
 }

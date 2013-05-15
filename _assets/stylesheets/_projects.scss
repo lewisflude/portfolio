@@ -1,0 +1,55 @@
+.project {
+
+  height: 360px;
+  background: lighten($primary-color, 25%);
+  border-top: 12px solid $primary-color;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  @include media($desktop) {
+    @include span-columns(4);
+    @include omega(3n);
+  }
+  @include media($tablet) {
+    @include span-columns(4);
+    @include omega(2n);
+  }
+  @include media($mobile) {
+    @include fill-parent;
+  }
+  a {
+    color: $text-color;
+    &:hover p, &:hover img {
+      opacity: 0.5;
+    }
+    &:hover img {
+      height: 130px;
+    }
+  }
+  &.old {
+    background: grayscale(lighten($primary-color, 25%));
+    border-top: 12px solid grayscale($primary-color);
+
+  }
+  h1,h2 {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  h1 {
+  }
+  h2 {
+    font-size: 12px;
+    font-weight: 100;
+  }
+  img {
+    height: 120px;
+    display: block;
+    margin: 0 auto 24px;
+    border-radius: 4px;
+    @include transition(all 120ms ease-in-out);
+    
+  }
+  p {
+    @include transition(all 120ms ease-in-out);
+    padding: 0 24px;
+  }
+}
