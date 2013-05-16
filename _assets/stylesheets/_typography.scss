@@ -1,20 +1,20 @@
 h1, h2, h3, h4, h5, h6 {
   margin: 0; padding: 0;
-  color: $title-color;
+  color: $secondary-color;
 }
 
 a {
   text-decoration: none;
-  color: $secondary-color;
+  color: $link-color;
   border-bottom: 4px solid transparent;
   @include transition(border-color 120ms ease-in-out);
   &:hover {
-    border-color: $secondary-color;
+    border-color: $link-color;
   }
 }
 
 body {
-  color: $text-color;
+  color: white;
   font: {
     family: "europa", sans-serif;
     weight: 400;

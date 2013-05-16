@@ -1,3 +1,10 @@
 @mixin box-shadow {
-  box-shadow: 0 0 8px 0 rgba(black, 0.5);
+  box-shadow: 0 0 8px 0 rgba(black, 0.25);
+}
+
+@mixin color-box {
+  border-radius: 4px;
+  padding: 24px;
+  border-top: 12px solid $primary-color;
+  background: lighten($primary-color, 25%);
 }

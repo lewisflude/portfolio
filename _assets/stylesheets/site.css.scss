@@ -20,7 +20,8 @@ html, body {
 }
 
 body {
-  background: rgb(255,255,235);
+  background: url(asset_path('background.png')) no-repeat center center fixed;
+  background-size: cover;
 }
 // Layout
 
@@ -36,22 +37,25 @@ body {
 .hero-unit-wrapper {
   background: url(asset_path('hero-unit-background.png'));
   overflow: hidden;
-  margin-bottom: 24px;
-  border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+  border-bottom: 12px solid $secondary-color;
+
   background-size: cover;
   @include media($tablet) {
     border-radius: 0;
   }
 }
 .hero-unit {
-  @include span-columns(8);
-  @include shift(2);
+  @include span-columns(6);
+  @include shift(3);
   color: white;
   @include media($tablet) {
     @include fill-parent;
     @include shift(0);
   }
-  padding: 24px;
+  padding: 48px;
   h1 {
     text-transform: uppercase;
     text-align: center;
@@ -74,28 +78,41 @@ body {
 }
 
 .about-container {
-  @include row;
+  background: rgba(black, 0.5);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .about {
 
-  border-top: 12px solid $primary-color;
-  background: lighten($primary-color, 25%);
-  margin-bottom: 24px;
-  @include span-columns(4);
-  border-radius: 4px;
-  
+  @include row;  
+  padding: 24px;
   @include media($tablet) {
     @include fill-parent;
     border-radius: 0;
+    
   }
   p {
+    @include span-columns(8);
     font-weight: 100;
-    font-size: 18px;
-    padding: 24px;
+    @include shift(2);
+    font-size: 24px;
+    line-height: 48px;
+    @include transition(all 120ms ease-in-out);
+    
+    @include media($tablet) {
+      @include fill-parent;
+      @include shift(0);
+      font-size: 18px;
+      line-height: 24px;
+    }
+
   }
   h1 {
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $secondary-color;
     }
   img {
     display: block;

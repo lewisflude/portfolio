@@ -3,7 +3,9 @@ header {
   margin: 24px auto;
   line-height: 48px;
   
-
+  a {
+    color: $secondary-color;
+  }
   .title {
     @include span-columns(6);
     font-size: 48px;
