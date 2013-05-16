@@ -81,7 +81,7 @@ body {
 
   border-top: 12px solid $primary-color;
   background: lighten($primary-color, 25%);
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   @include span-columns(4);
   border-radius: 4px;
   
