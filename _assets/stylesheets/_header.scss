@@ -8,7 +8,7 @@ header {
     @include span-columns(6);
     font-size: 48px;
     text-transform: uppercase;
-    @include media($mobile) {
+    @include media($tablet) {
       @include fill-parent;
       text-align: center;
     }
@@ -23,7 +23,7 @@ header {
         margin-right: 0;
       }
     }
-    @include media($mobile) {
+    @include media($tablet) {
       @include fill-parent;
       text-align: center;
     }
