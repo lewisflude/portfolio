@@ -67,6 +67,10 @@ body {
   img {
     display: block;
     margin: 0 auto 24px;
+    width: 240px;
+    height: 240px;
+    border-radius: 120px;
+    box-shadow: 0 0 12px rgba(black, 0.5);
   }
 
   p {
