@@ -9,7 +9,7 @@ a {
   border-bottom: 4px solid transparent;
   @include transition(border-color 120ms ease-in-out);
   &:hover {
-    border-color: $link-color;
+    border-color: $secondary-color;
   }
 }
 
