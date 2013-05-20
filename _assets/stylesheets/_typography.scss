@@ -1,6 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
   margin: 0; padding: 0;
-  color: $secondary-color;
+  color: $title-color;
 }
 
 a {
@@ -9,12 +9,12 @@ a {
   border-bottom: 4px solid transparent;
   @include transition(border-color 120ms ease-in-out);
   &:hover {
-    border-color: $secondary-color;
+    border-color: $primary-color;
   }
 }
 
 body {
-  color: white;
+  color: $text-color;
   font: {
     family: "europa", sans-serif;
     weight: 400;

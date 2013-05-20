@@ -20,7 +20,7 @@ html, body {
 }
 
 body {
-  background: $background-color url(asset_path('background.png')) no-repeat center center fixed;
+  background: $background-color;
   background-size: cover;
 }
 // Layout
@@ -33,69 +33,17 @@ body {
   @include outer-container;
 }
 
-
-.hero-unit-wrapper {
-  background: url(asset_path('hero-unit-background.png'));
-  overflow: hidden;
-
-  border-bottom: 12px solid $secondary-color;
-
-  background-size: cover;
-  @include media($tablet) {
-    border-radius: 0;
-  }
-}
-.hero-unit {
-  @include span-columns(6);
-  @include shift(3);
-  color: white;
-  @include media($tablet) {
-    @include fill-parent;
-    @include shift(0);
-  }
-  padding: 48px;
-  h1 {
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    font-weight: 700;
-    @include transition (all 120ms ease-in-out);
-    .amp {
-      color: $secondary-color;
-    }
-  }
-  img {
-    display: block;
-    margin: 0 auto 24px;
-    width: 240px;
-    height: 240px;
-    border-radius: 120px;
-    box-shadow: 0 0 12px rgba(black, 0.5);
-  }
-
-  p {
-    font-weight: 100;
-  }
-
-}
-
-.about-container {
-  background: rgba(black, 0.5);
-}
-
 .about {
 
-  @include row;  
+  @include span-columns(8); 
   padding: 24px;
   @include media($tablet) {
     @include fill-parent;
     border-radius: 0;
-    
   }
   p {
-    @include span-columns(8);
     font-weight: 100;
-    @include shift(2);
+    margin-bottom: 24px;
     font-size: 24px;
     line-height: 48px;
     @include transition(all 120ms ease-in-out);
@@ -109,10 +57,11 @@ body {
 
   }
   h1 {
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: $secondary-color;
+    @include media($tablet) {
+      text-align: center;
+    }
     }
   img {
     display: block;

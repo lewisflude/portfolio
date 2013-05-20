@@ -23,7 +23,7 @@
     @include fill-parent;
   }
   a {
-    color: white;
+    color: $text-color;
     font-weight: 100;
     &:hover p, &:hover img {
       opacity: 0.75;

@@ -7,16 +7,16 @@
   margin-top: 24px;
   height: 48px;
   border: none;
-  background: $secondary-color;
+  background: $primary-color;
   border-radius: 4px;
   color: white;
   @include transition (all 120ms);
-  box-shadow: 0 4px darken($secondary-color, 10%);
+  box-shadow: 0 4px darken($primary-color, 10%);
   @include media($mobile) {
     font-size: 18px;
   }
   &:hover {
-    box-shadow: 0 4px darken($secondary-color, 20%);
-    background: darken($secondary-color, 10%); 
+    box-shadow: 0 4px darken($primary-color, 20%);
+    background: darken($primary-color, 10%); 
   }
 }

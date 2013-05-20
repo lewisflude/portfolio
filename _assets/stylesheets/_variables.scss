@@ -1,10 +1,10 @@
-$background-color: #1e284a;
+$background-color:  #fee6db;
 $primary-color: #2ecc71;
 $link-color: #e45C91;
 $secondary-color: #f1c40f;
 $primary-grayscale: grayscale($primary-color);
-$text-color: #222;
-$title-color: #111;
+$text-color: #444;
+$title-color: #222;
 
 $desktop: new-breakpoint(min-width 769px 12);
 $tablet: new-breakpoint(max-width 768px 8);
