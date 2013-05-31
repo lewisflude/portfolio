@@ -1,56 +1,57 @@
 .project-container {
 
 }
-.project {
 
-  height: 360px;
+
+.project {
+  @include span-columns(4);
+  @include omega(3n);
+  @include transition(all 120ms ease-in-out);
+  height: 480px;
   margin-bottom: 24px;
-  &.old {
-    height: 180px;
-    h1, h2 {
-      color: grayscale($secondary-color);
-    }
-  }
-  @include media($desktop) {
-    @include span-columns(4);
-    @include omega(3n);
-  }
-  @include media($tablet) {
-    @include span-columns(4);
-    @include omega(2n);
-  }
-  @include media($mobile) {
-    @include fill-parent;
-  }
   a {
     color: $text-color;
-    font-weight: 100;
-    &:hover p, &:hover img {
-      opacity: 0.75;
+  }
+  &:hover {
+    @include transform(scale(1.05));
+    background: rgba(255,0,0,0.15);
+  }
+
+  &.old {
+    h1, h2 {
+      color: rgba($text-color, 0.5);
     }
-    &:hover img {
-      height: 130px;
+    p {
+      color: rgba($text-color, 0.5);
     }
   }
   h1,h2 {
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 0;
   }
+
   h1 {
+    margin-top: 24px;
   }
+
   h2 {
     font-size: 12px;
     font-weight: 100;
   }
+
   img {
-    height: 120px;
-    display: block;
+    max-height: 180px;
+    display: block; 
     margin: 0 auto 24px;
     @include transition(all 120ms ease-in-out);
-    
   }
+
   p {
     @include transition(all 120ms ease-in-out);
     padding: 0 24px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+
   }
 }
