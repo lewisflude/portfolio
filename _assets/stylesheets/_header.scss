@@ -1,58 +1,15 @@
 header {
+  padding-top: 24px;
   @include row;  
-  margin: 24px auto;
   a {
     color: $title-color;
   }
   .title {
     
     text-transform: uppercase;
-    text-shadow: 4px 4px 0 $primary-color, 3px 3px 0 $primary-color, 2px 2px 0 $primary-color, 1px 1px 0 $primary-color;
-    text-align: center;
     
-    font-size: 4em;
-    line-height: 1.5;
-
+    font-size: golden-ratio(1em, 2);
+    
   }
 
-  // nav {
-  //   text-transform: uppercase;
-  //   ul {
-  //     list-style: none;
-  //     padding: 0;
-  //     margin: 0;
-  //   }
-  //   li {
-  //     display: inline-block;
-  //     font-size: 1.5em;
-  //     font-weight: 700;
-  //   }
-  //   li + li {
-
-  //     &:before {
-  //       width: 48px;
-  //       display: inline-block;
-  //       text-align: center;
-  //       content: "●";
-  //       color: $primary-color;
-  //     }
-
-  //   }
-
-  //   a {
-
-
-  //     &.twitter:before {
-  //       content: '\f202';
-  //       display: inline-block;
-  //       -webkit-font-smoothing: antialiased;
-  //       font: normal 16px/1 'Genericons';
-  //       vertical-align: top;
-  //     }
-  //   }
-  //   @include media($tablet) {
-  //     @include fill-parent;
-  //     text-align: center;
-  //   }
-  // }
 }

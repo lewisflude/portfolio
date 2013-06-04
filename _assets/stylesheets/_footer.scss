@@ -1,5 +1,8 @@
 footer {
     @include row;
+    
+    clear: both;
+    
     min-height: 48px;
     color: rgba(white, 0.1);
 
