@@ -1,0 +1,26 @@
+// Layout
+
+.outer-container {
+  @include outer-container;
+}
+
+.wrapper {
+  @include span-columns(6);
+  @include shift(3);
+}
+
+.action-container {
+  padding: 24px;
+  margin-top: 24px;
+  margin-bottom: 96px;
+  text-align: center;
+  @include media($tablet) {
+    border: none;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+.about-container {
+  text-align: center;
+}

@@ -1,0 +1,36 @@
+.portfolio-item {
+	@include pad(24px);
+	@include media($desktop) {
+		@include span-columns(4);
+		@include nth-omega(3);
+	}
+	position: relative;
+	a {
+		border: none;
+	}
+}
+
+.portfolio-item-image {
+	width: 100%;
+	border: 1px solid $border-color;
+}
+
+.portfolio-item-heading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 24px;
+	background: white;
+	opacity: 0;
+	transition: 120ms;
+
+	h1, h2 {
+		color: $primary-color;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
