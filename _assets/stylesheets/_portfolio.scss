@@ -2,7 +2,7 @@
 	@include pad(24px);
 	@include media($desktop) {
 		@include span-columns(4);
-		@include nth-omega(3);
+		@include nth-omega(3n);
 	}
 	position: relative;
 	a {
