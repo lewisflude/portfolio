@@ -1,9 +1,9 @@
 .portfolio-item {
-	@include pad(12px);
 	@include media($desktop) {
 		@include span-columns(4);
 		@include nth-omega(3n);
 	}
+  margin-bottom: 48px;
 	position: relative;
   @include transition(120ms);
 
@@ -31,7 +31,6 @@
 
   h1,
   h2 {
-    color: $primary-color;
     line-height: 24px;
   }
 
