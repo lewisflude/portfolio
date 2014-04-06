@@ -5,11 +5,15 @@ header {
     color: $title-color;
   }
   .title {
-    
-    text-transform: uppercase;
     font-size: golden-ratio(1em, 2);
+    font-weight: 300;
     text-align: center;
-    
   }
-
+  .logomark {
+    height: 36px;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+  } 
 }

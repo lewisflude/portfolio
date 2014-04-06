@@ -1,5 +1,5 @@
 .portfolio-item {
-	@include pad(24px);
+	@include pad(12px);
 	@include media($desktop) {
 		@include span-columns(4);
 		@include nth-omega(3n);
@@ -22,11 +22,10 @@
 	width: 100%;
 
   box-shadow: 0 0 24px rgba(black, .1);
-  border-radius: 4px;
 }
 
 .portfolio-item-heading {
-  padding: 24px;
+  padding: 12px;
 
   text-align: center;
 
@@ -38,11 +37,12 @@
 
   h1 {
     font-size: 24px;
+    margin-bottom: 12px;
   }
 
   h2 {
     font-weight: 100;
-    font-size: 24px;
+    font-size: 18px;
   }
 
 }

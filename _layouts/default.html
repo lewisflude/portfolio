@@ -17,7 +17,10 @@
     <body>
         <div class="outer-container">
             <header>
-                <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+                <h1 class="title"><a href="/">
+                <img class="logomark" src="{% asset_path logomark.png %}">
+                {{ site.name }}
+                </a></h1>
             </header>
             {{ content }}
         </div>
